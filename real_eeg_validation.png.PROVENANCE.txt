@@ -1,0 +1,8 @@
+REAL RECORDING, WRONG EXPERIMENT, n=7. Produced by validate_real_eeg.py.
+
+The EEG is MNE's sample_audvis_raw.fif — an auditory/visual demo, one subject, beeps and
+checkerboards, NO LANGUAGE TASK. The 7 sentences were never shown to anyone. The 7 EEG
+values are randomly chosen 2-second windows, paired to sentences by array index.
+
+Whatever correlation this plots is a property of the pairing. Do not put it in a deck.
+See PROVENANCE.md — audited 2026-08-07.
