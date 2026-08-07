@@ -1,16 +1,8 @@
-# CREDENTIALS — these four scripts hardcode an OpenNeuro API token.
-# Excluded so it cannot enter git history, where removing it means rewriting every
-# commit that ever touched it. This directory's sibling has been through that once
-# already (phronesis-world, .git 9.9GB -> 52MB, 2026-07-29).
-#
-# The token is still live on disk and should be rotated: it was committed to no
-# repo, but it sits in plain text in four files.
-download_real_data.py
-download_with_token.py
-graphql_download.py
-download_openneuro.py
+# The four download scripts used to hardcode an OpenNeuro API token and were excluded
+# so it could not enter history. The token was replaced with an environment read on
+# 2026-08-07, so they are tracked now. It never reached a commit — and it should still be
+# rotated, since it sat in cleartext.
 
-# Large or regenerable
 __pycache__/
 *.pyc
 .DS_Store
