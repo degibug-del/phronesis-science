@@ -1,5 +1,34 @@
 # Zenodo Submission Template: Spectral Grammar Theory
 
+> **STATUS NOTE — added 2026-08-07, after the theory was tested.**
+>
+> This manuscript is **published**: [10.5281/zenodo.21404376](https://doi.org/10.5281/zenodo.21404376),
+> open access, 2026-07-16. Its abstract discloses the data honestly — *"Proof-of-concept in
+> synthetic data; real experiments in progress"* — and the body says "virtual subjects" and
+> "realistic synthetic data" throughout. Nothing here was passed off as recorded EEG.
+>
+> Two things in it are now false, and both are the paper's own forward-looking claims:
+>
+> 1. **"Real experiments in progress"** — they are not. `ds002315` was never downloaded
+>    (0 files; a 993-byte tarball). No EEG analysis has ever run on real data.
+>
+> 2. **The theory the simulation modelled does not survive contact with real parses.** On
+>    2026-08-07 the spectral construction was implemented seven ways — word co-occurrence
+>    over types and tokens, symmetric parse, directed parse, labelled parse, labelled and
+>    directed — and none measures coherence. λ₁ over a dependency tree tracks degree
+>    concentration, so scrambled text scores as more coherent. The one signal that looked
+>    real reversed sign on a corpus nobody wrote for the test: 75/13 against 3/9.
+>
+> The r = 0.527 is not wrong. It is what the generator was built to produce, and a
+> proof-of-concept on synthetic data is a legitimate thing to publish. What has changed is
+> that the phenomenon it was a proof of concept *for* has since been measured and is not
+> there.
+>
+> Working notes and every negative result: `icm_parse.py`, `icm_confound.py`,
+> `icm_labels.py`, `breakage.py`, and `PROVENANCE.md` in this directory.
+> Public writeup: https://phronesis.world/icm
+
+
 ## Submission Metadata
 
 ### Title
